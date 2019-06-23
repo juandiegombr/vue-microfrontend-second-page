@@ -1,4 +1,4 @@
-# micro2
+# MicroFrontend Second Page
 
 ## Project setup
 ```
