@@ -1,6 +1,7 @@
 <template>
-  <div id="Second-container">
+  <div id="Second-container" class="page">
     <h1>Second Microfrontend</h1>
+    <p>This is a MicroFrontend comming from a remote project</p>
   </div>
 </template>
 
