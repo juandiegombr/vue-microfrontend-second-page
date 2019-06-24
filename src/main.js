@@ -3,9 +3,17 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-window.renderSecond = (containerId, router) => {
-  new Vue({
+let vueInstante = null
+
+window.renderSecond = (containerId, router, registerListeners) => {
+  // registerListeners(listeners)
+  vueInstante = new Vue({
     router,
     render: h => h(App),
-  }).$mount(`#${containerId}`)
+  })
+  vueInstante.$mount(`#${containerId}`)
+}
+
+window.unmountSecond = () => {
+  vueInstante.$destroy(true)
 }
